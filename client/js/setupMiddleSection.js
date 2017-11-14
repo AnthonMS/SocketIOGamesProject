@@ -45,6 +45,13 @@ class SetupMiddleSection
             '        <button id="message_btn">-</button>\n' +
             '    </div>';
         $middle_section.append($home_section);
+
+        const $navBtn = $('#home_nav_btn');
+        $navBtn.css('border-bottom', 'solid 8px white');
+        $('#games_nav_btn').css('border-bottom', '');
+        $('#highcores_nav_btn').css('border-bottom', '');
+        $('#login_nav_btn').css('border-bottom', '');
+        $('#about_nav_btn').css('border-bottom', '');
     }
 
     createGamesGrid()
@@ -67,6 +74,13 @@ class SetupMiddleSection
             '        <img class="game_imgs" src="img/btns/coming_soon_btn.png" alt="Tic Tac Toe">\n' +
             '    </div>';
         $middle_section.append($games_section);
+
+        const $navBtn = $('#games_nav_btn');
+        $navBtn.css('border-bottom', 'solid 8px white');
+        $('#home_nav_btn').css('border-bottom', '');
+        $('#highcores_nav_btn').css('border-bottom', '');
+        $('#login_nav_btn').css('border-bottom', '');
+        $('#about_nav_btn').css('border-bottom', '');
     }
 
     createHighscoresGrid()
@@ -75,16 +89,30 @@ class SetupMiddleSection
         $middle_section.html('');
         const $games_section = '';
         $middle_section.append($games_section);
+
+        const $navBtn = $('#highcores_nav_btn');
+        $navBtn.css('border-bottom', 'solid 8px white');
+        $('#games_nav_btn').css('border-bottom', '');
+        $('#home_nav_btn').css('border-bottom', '');
+        $('#login_nav_btn').css('border-bottom', '');
+        $('#about_nav_btn').css('border-bottom', '');
     }
 
     createLoginGrid()
     {
         const $middle_section = $('#middle_section');
         $middle_section.html('');
-        const $games_section = '<p id="login_message" class="login_messageC">Please enter a username below to play multiplayer</p>\\n\' +\n' +
-            '            \'    <input type="text" id="username_input" placeholder="username">\\n\' +\n' +
-            '            \'    <button id="login_btn">Go Go Go</button>';
+        const $games_section = '<p id="login_message" class="login_messageC">Please enter a username below to play multiplayer</p>\n' +
+            '    <input type="text" id="username_input" placeholder="username">\n' +
+            '    <button id="login_btn">Go Go Go</button>';
         $middle_section.append($games_section);
+
+        const $navBtn = $('#login_nav_btn');
+        $navBtn.css('border-bottom', 'solid 8px white');
+        $('#games_nav_btn').css('border-bottom', '');
+        $('#home_nav_btn').css('border-bottom', '');
+        $('#highcores_nav_btn').css('border-bottom', '');
+        $('#about_nav_btn').css('border-bottom', '');
     }
 
     createAboutGrid()
@@ -103,5 +131,12 @@ class SetupMiddleSection
             '                        For now, they are very basic. My TicTacToe is an example, but still, it was my first online game.</p>\n' +
             '    </div>';
         $middle_section.append($games_section);
+
+        const $navBtn = $('#about_nav_btn');
+        $navBtn.css('border-bottom', 'solid 8px white');
+        $('#games_nav_btn').css('border-bottom', '');
+        $('#home_nav_btn').css('border-bottom', '');
+        $('#highcores_nav_btn').css('border-bottom', '');
+        $('#login_nav_btn').css('border-bottom', '');
     }
 }

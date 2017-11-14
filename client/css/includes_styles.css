@@ -31,8 +31,6 @@ body {
 
 .nav_btn_li {
     float: left;
-    margin-left: 5px;
-    margin-right: 5px;
     padding-left: 10px;
     padding-right: 10px;
     color: white;
@@ -190,6 +188,7 @@ body {
     -webkit-box-shadow: inset 0px 0px 8px 4px rgba(186,186,186,1);
     -moz-box-shadow: inset 0px 0px 8px 4px rgba(186,186,186,1);
     box-shadow: inset 0px 0px 8px 4px rgba(186,186,186,1);
+    overflow: hidden;
 }
 #message_container {
     position: absolute;

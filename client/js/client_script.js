@@ -4,7 +4,7 @@ $(document).ready(function () {
     //const client_connect = new Client_connect();
     console.log(socket_G.id);
     socketId_G = socket_G.id;
-
+    const setupMiddleSection = new SetupMiddleSection(0);
     setupEventListeners();
 });
 
