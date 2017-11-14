@@ -2,6 +2,7 @@ body {
     background-image: url("../img/bg/dust_scratches.png");
 }
 
+/*------------------- THIS IS FOR THE HEADER  ------------------*/
 #header_container {
     background: #6d6d6d;
     height: 100px;
@@ -13,7 +14,9 @@ body {
     margin-right: auto;
     height: 100px;
 }
+/*---------------------------------------------------------------*/
 
+/*------------------- THIS IS FOR THE NAVIGATION BAR  ------------------*/
 #nav_bar {
     background-color: #6d6d6d;
     text-align: center;
@@ -41,7 +44,9 @@ body {
     background-color: white;
     cursor: pointer;
 }
+/*---------------------------------------------------------------*/
 
+/*------------------- THIS IS FOR THE FOOTER  ------------------*/
 #footer_container {
     position: absolute;
     right: 0;
@@ -54,7 +59,9 @@ body {
 #footer_container p {
     color: black;
 }
+/*---------------------------------------------------------------*/
 
+/*------------------- THIS IS FOR THE LEFT CONTAINER  ------------------*/
 #left_bar {
     position: absolute;
     left: 0;
@@ -112,7 +119,9 @@ body {
     cursor: pointer;
     background-image: url("../img/btns/close_left_hover.png");
 }
+/*---------------------------------------------------------------*/
 
+/*------------------- THIS IS FOR THE RIGHT CONTAINER  ------------------*/
 #right_bar {
     position: absolute;
     right: 0;
@@ -155,6 +164,7 @@ body {
     background-image: url("../img/btns/close_left_hover.png");
     transform:scaleX(-1);
 }
+/*---------------------------------------------------------------*/
 
 #middle_section {
     border: 1px solid black;
@@ -163,8 +173,12 @@ body {
     left: 218px;
     top: 191px;
     bottom: 55px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+/*---------------------------------------------------------------*/
 
+/*------------------- THIS IS FOR THE HOME TAB  ------------------*/
 #chat_container {
     position: absolute;
     top: 4px;
@@ -199,10 +213,14 @@ body {
     float: right;
     height: 44px;
     width: 47px;
-    background: url("../img/btns/send_btn.png");;
+    background: url("../img/btns/send_btn.png");
     background-size:cover;
     color: transparent;
     border-style: none;
+}
+#message_btn:hover {
+    background: url("../img/btns/send_btn_hover.png");
+    cursor: pointer;
 }
 
 
@@ -221,3 +239,109 @@ body {
         width: 50%;
     }
 }
+/*-----------------------------------------------------------*/
+
+/*-------------------- THIS IS FOR THE GAMES TAB  ------------*/
+.game_container {
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    width: 100%;
+    height: 122pt;
+    margin: 0 auto 30px; /*top, left&right, bottom*/
+    overflow: hidden;
+}
+.game_container:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.game_imgs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*------------------------------------------------------------*/
+
+/*-------------------- THIS IS FOR THE LOGIN TAB  ------------*/
+
+.login_messageC {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.login_message_error {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: red;
+}
+
+#username_input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 400px;
+    height: 30px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+#login_btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: none;
+    border-radius: 10px;
+}
+#login_btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+/*------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

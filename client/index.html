@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SimpleGames</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="css/includes_styles.css" rel="stylesheet"/>
     <script src="js/client_connect.js"></script>
+    <script src="js/setupMiddleSection.js"></script>
     <script src="js/client_script.js"></script>
 </head>
 <body>
@@ -24,10 +25,13 @@
             <p class="nav_btn">Games</p>
         </li>
         <li class="nav_btn_li">
-            <p class="nav_btn">Login</p>
+            <p class="nav_btn">Highscores</p>
         </li>
         <li class="nav_btn_li">
-            <p class="nav_btn">Register</p>
+            <p class="nav_btn">Go Online</p>
+        </li>
+        <li class="nav_btn_li">
+            <p class="nav_btn">About</p>
         </li>
     </ul>
 </div>
@@ -58,16 +62,9 @@
 </div>
 
 <div id="middle_section">
-    <div id="chat_container">
-        <div id="message_container">
-            <p class="message"><b>- Anthon:</b> Hello Guys</p>
-            <p class="message"><b>- Noah:</b> Helloo!</p>
-        </div>
-    </div>
-    <div id="message_input_container">
-        <input type="text" id="message_input" placeholder="message...">
-        <button id="message_btn">-</button>
-    </div>
+    <p id="login_message" class="login_messageC">Please enter a username below to play multiplayer</p>
+    <input type="text" id="username_input" placeholder="username">
+    <button id="login_btn">Go Go Go</button>
 </div>
 
 <footer id="footer_container">
@@ -76,3 +73,16 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
