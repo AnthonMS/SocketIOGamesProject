@@ -18,9 +18,11 @@ class SetupMiddleSection
                 break;
             case 3:
                 //console.log('go online');
+                this.createLoginGrid();
                 break;
             case 4:
                 //console.log('about');
+                this.createAboutGrid();
                 break;
             case defaultStatus:
                 //console.log('defaultStatus');
@@ -79,7 +81,9 @@ class SetupMiddleSection
     {
         const $middle_section = $('#middle_section');
         $middle_section.html('');
-        const $games_section = '';
+        const $games_section = '<p id="login_message" class="login_messageC">Please enter a username below to play multiplayer</p>\\n\' +\n' +
+            '            \'    <input type="text" id="username_input" placeholder="username">\\n\' +\n' +
+            '            \'    <button id="login_btn">Go Go Go</button>';
         $middle_section.append($games_section);
     }
 
@@ -87,7 +91,17 @@ class SetupMiddleSection
     {
         const $middle_section = $('#middle_section');
         $middle_section.html('');
-        const $games_section = '';
+        const $games_section = '<h1 id="about_title">About</h1>\n' +
+            '    <div id="about_me_container">\n' +
+            '        <p id="me_info">I am the average student in programming and system development in Denmark.<br>\n' +
+            '                        I am in my third semester of school, but we have not been taught much webdevelopment.\n' +
+            '                        Hence my awesome designing skills.</p>\n' +
+            '    </div>\n' +
+            '    <div id="about_why_container">\n' +
+            '        <p id="why_info">I am making this for fun, as a project in my spare time.<br>\n' +
+            '                        Also because I really wan\'t to learn how to make web applications.\n' +
+            '                        For now, they are very basic. My TicTacToe is an example, but still, it was my first online game.</p>\n' +
+            '    </div>';
         $middle_section.append($games_section);
     }
 }
